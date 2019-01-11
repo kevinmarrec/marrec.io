@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+
+# Logs
+*.log*
+
+# IDE
+.idea
+.vscode
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# Local Service Workers
+sw.*

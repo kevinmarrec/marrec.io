@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "marrec.io",
+      "script": "./node_modules/.bin/nuxt",
+      "args": "start",
+      "exec_mode": "cluster_mode",
+      "instances": 1,
+      "port": 3000
+    }
+  ]
+}
