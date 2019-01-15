@@ -1,6 +1,6 @@
 import { build, head, manifest, meta } from './config'
 
-const isProduction = process.env.NODE_ENV === 'production'
+const isProduction: boolean = process.env.NODE_ENV === 'production'
 
 export default {
   modern: isProduction,
@@ -28,7 +28,7 @@ export default {
   'google-analytics': {
     id: 'UA-131596114-1',
     debug: {
-      sendHitTask: process.env.NODE_ENV === 'production'
+      sendHitTask: isProduction
     }
   },
 

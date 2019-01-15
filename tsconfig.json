@@ -1,12 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
     "lib": ["esnext", "esnext.asynciterable", "dom"],
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "allowJs": true,
     "sourceMap": true,
     "strict": true,
     "noImplicitAny": true,
@@ -19,7 +18,8 @@
     },
     "types": [
       "@types/node",
-      "@nuxt/vue-app-edge"
+      "@nuxt/vue-app-edge",
+      "vuetify"
     ]
   },
   "exclude": [

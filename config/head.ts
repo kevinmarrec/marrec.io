@@ -2,9 +2,6 @@ export default {
   meta: [
     {
       'http-equiv': 'x-ua-compatible', content: 'ie=edge'
-    },
-    {
-      name: 'google-site-verification', content: 'TyEvbo7__TYcHIZvYu4KCQAzPPLeBCK72mWLSIl7SEQ'
     }
   ],
   __dangerouslyDisableSanitizers: ['script'],
