@@ -1,9 +1,13 @@
 {
   "defaultSeverity": "error",
   "extends": [
+    "tslint:recommended",
     "tslint-config-standard"
   ],
   "rules": {
-    "prefer-const": true
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ]
   }
 }

@@ -1,34 +1,35 @@
 export default {
+  __dangerouslyDisableSanitizers: ['script'],
   meta: [
     {
-      'http-equiv': 'x-ua-compatible', content: 'ie=edge'
+      content: 'ie=edge',
+      'http-equiv': 'x-ua-compatible'
     }
   ],
-  __dangerouslyDisableSanitizers: ['script'],
   script: [
     {
-      type: 'application/ld+json',
       innerHTML: JSON.stringify(
         {
           '@context': 'http://schema.org',
           '@type': 'Person',
-          'address': {
+          address: {
             '@type': 'PostalAddress',
-            'addressLocality': 'Rennes, France',
-            'postalCode': 'F-35000'
+            addressLocality: 'Rennes, France',
+            postalCode: 'F-35000'
           },
-          'name': 'Kevin Marrec',
-          'image': 'https://marrec.io/img/me.jpg',
-          'email': 'mailto:contact@kevinmarrec.com',
-          'telephone': '+33 659096371',
-          'jobTitle': 'Full-stack Developer',
-          'url': 'https://marrec.io',
-          'sameAs': [
+          email: 'mailto:contact@kevinmarrec.com',
+          image: 'https://marrec.io/img/me.jpg',
+          jobTitle: 'Full-stack Developer',
+          name: 'Kevin Marrec',
+          sameAs: [
             'https://twitter.com/K_Marrec',
             'https://github.com/kevinmarrec',
             'https://www.linkedin.com/in/kevinmarrec'
-          ]
-        })
+          ],
+          telephone: '+33 659096371',
+          url: 'https://marrec.io'
+        }),
+      type: 'application/ld+json'
     }
   ]
 }

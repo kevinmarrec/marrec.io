@@ -3,19 +3,20 @@ import { build, head, manifest, meta } from './config'
 const isProduction: boolean = process.env.NODE_ENV === 'production'
 
 export default {
-  modern: isProduction,
-  // Watch config subfiles
-  watch: ['~/config/*'],
+  build,
   head,
+  manifest,
   meta,
+  modern: isProduction,
+  watch: ['~/config/*'],
 
   css: [
     '~/assets/style/app.styl'
   ],
 
-  /*
-  * Modules
-  */
+  /**
+   * Modules
+   */
 
   modules: [
     '@nuxtjs/google-analytics',
@@ -26,10 +27,13 @@ export default {
   ],
 
   'google-analytics': {
-    id: 'UA-131596114-1',
     debug: {
       sendHitTask: isProduction
-    }
+    },
+    id: 'UA-131596114-1',
+    set: [
+      { field: 'anonymizeIp', value: true }
+    ]
   },
 
   redirect: [
@@ -46,8 +50,5 @@ export default {
     google: {
       families: ['Roboto:300,400,500,700']
     }
-  },
-
-  manifest,
-  build
+  }
 }

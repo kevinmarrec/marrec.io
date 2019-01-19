@@ -1,8 +1,8 @@
 export default {
-  name: 'Marrec.io - Kevin Marrec',
-  description: 'Kevin Marrec, Full-stack Developer.',
   author: 'Kevin Marrec',
+  description: 'Kevin Marrec, Full-stack Developer.',
   mobileAppIOs: true,
+  name: 'Marrec.io - Kevin Marrec',
   ogHost: 'https://marrec.io',
   twitterCard: 'summary',
   twitterCreator: '@K_Marrec',

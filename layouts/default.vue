@@ -2,12 +2,12 @@
   <v-app>
     <v-toolbar app color="primary" dark>
       <v-flex class="text-xs-center">
-        <span class='title font-weight-bold'>Kevin Marrec</span>
+        <span class="title font-weight-bold">Kevin Marrec</span>
       </v-flex>
     </v-toolbar>
     <v-content>
       <v-container fill-height>
-        <nuxt />
+        <nuxt/>
       </v-container>
     </v-content>
     <v-footer app color="primary" dark class="pa-3">
@@ -23,6 +23,6 @@ import { version } from '~/package.json'
 
 @Component
 export default class LayoutDefault extends Vue {
-  version = version
+  protected version = version
 }
 </script>
