@@ -10,5 +10,5 @@
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component
-export default class PageIndex extends Vue {}
+export default class PageIndex extends Vue { }
 </script>
