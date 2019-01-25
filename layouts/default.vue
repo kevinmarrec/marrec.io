@@ -21,7 +21,14 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { version } from '~/package.json'
 
-@Component
+@Component({
+  head () {
+    return {
+      title: 'Kevin Marrec',
+      titleTemplate: '%s | Marrec.io'
+    }
+  }
+})
 export default class LayoutDefault extends Vue {
   protected version = version
 }
