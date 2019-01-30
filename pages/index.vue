@@ -4,7 +4,7 @@
     <div class="mt-2">wants to let you know that</div>
     <code class="mt-2">His website is under construction !</code>
     <div class="mt-5">
-      <v-btn color="primary" href="https://github.com/kevinmarrec" rel="noreferrer noopener" target="blank">
+      <v-btn color="primary" href="https://github.com/kevinmarrec" aria-label="GitHub" rel="noreferrer noopener" target="blank">
         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
           <path
             fill="#FFF"
@@ -12,7 +12,7 @@
           ></path>
         </svg>
       </v-btn>
-      <v-btn color="primary" href="https://twitter.com/K_Marrec" rel="noreferrer noopener" target="blank">
+      <v-btn color="primary" href="https://twitter.com/K_Marrec" aria-label="Twitter" rel="noreferrer noopener" target="blank">
         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
           <path
             fill="#FFF"
@@ -20,7 +20,7 @@
           ></path>
         </svg>
       </v-btn>
-      <v-btn color="primary" href="https://www.linkedin.com/in/kevinmarrec" rel="noreferrer noopener" target="blank">
+      <v-btn color="primary" href="https://www.linkedin.com/in/kevinmarrec" aria-label="LinkedIn" rel="noreferrer noopener" target="blank">
         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
           <path
             fill="#FFF"
