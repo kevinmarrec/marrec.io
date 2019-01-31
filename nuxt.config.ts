@@ -1,10 +1,11 @@
-import { build, head, manifest, meta } from './config'
+import { build, head, hooks, manifest, meta } from './config'
 
 const isProduction: boolean = process.env.NODE_ENV === 'production'
 
 export default {
   build,
   head,
+  hooks,
   manifest,
   meta,
   modern: isProduction,
