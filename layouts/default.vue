@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <v-toolbar app color="primary" dark>
-      <v-flex class="text-xs-center">
-        <span class="title font-weight-bold">Kevin Marrec</span>
+      <v-flex text-xs-center>
+        <span class="title font-weight-bold">Marrec.io</span>
       </v-flex>
     </v-toolbar>
     <v-content>
@@ -12,7 +12,7 @@
     </v-content>
     <v-footer app color="primary" dark class="pa-3">
       <v-spacer></v-spacer>
-      <div class="ml-2">v{{ version }}</div>
+      <span>v{{ version }}</span>
     </v-footer>
   </v-app>
 </template>
