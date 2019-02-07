@@ -16,10 +16,11 @@
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^2.6.0",
     "@nuxtjs/redirect-module": "^0.2.0",
-    "@nuxtjs/vuetify": "^0.5.2",
-    "nuxt-ts": "^2.4.2",
+    "@nuxtjs/vuetify": "^0.5.3",
+    "nuxt-ts": "^2.4.3",
     "nuxt-webfontloader": "^1.0.0",
-    "vue-property-decorator": "^7.3.0"
+    "vue-property-decorator": "^7.3.0",
+    "vuex-module-decorators": "^0.9.7"
   },
   "devDependencies": {
     "stylus": "^0.54.5",
