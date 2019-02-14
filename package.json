@@ -13,14 +13,14 @@
     "lint:fix": "tslint --project . --fix"
   },
   "dependencies": {
-    "@nuxtjs/google-analytics": "^2.0.2",
-    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/google-analytics": "^2.0.3",
+    "@nuxtjs/pwa": "^3.0.0-beta.6",
     "@nuxtjs/redirect-module": "^0.2.0",
-    "@nuxtjs/vuetify": "^0.5.3",
+    "@nuxtjs/vuetify": "^0.5.4",
     "nuxt-ts": "^2.4.3",
     "nuxt-webfontloader": "^1.0.0",
     "vue-property-decorator": "^7.3.0",
-    "vuex-module-decorators": "^0.9.7"
+    "vuex-module-decorators": "^0.9.8"
   },
   "devDependencies": {
     "stylus": "^0.54.5",
