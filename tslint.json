@@ -5,6 +5,7 @@
     "tslint-config-standard"
   ],
   "rules": {
+    "member-access": false,
     "object-literal-key-quotes": [
       true,
       "as-needed"

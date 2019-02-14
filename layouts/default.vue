@@ -30,6 +30,6 @@ import { version } from '~/package.json'
   }
 })
 export default class LayoutDefault extends Vue {
-  protected version = version
+  version = version
 }
 </script>
