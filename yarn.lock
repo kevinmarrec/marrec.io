@@ -1212,12 +1212,12 @@
   resolved "https://registry.yarnpkg.com/@nuxtjs/redirect-module/-/redirect-module-0.2.0.tgz#579eddd2278f421a25be23c1ecbad15d712ad39e"
   integrity sha512-dXrjeNW7uvsPq2/v1gbdfnUvzIpw7qAOpJacEEYUyLAHuhnDhG58Cp7xJOKu0l4bLoTAnj8GKfVdoM3ze1cd9A==
 
-"@nuxtjs/vuetify@^0.5.4":
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/vuetify/-/vuetify-0.5.4.tgz#e9d5874390a34fa10872a57feadb5526fe5f940e"
-  integrity sha512-scTFpvUDIxGFGV6K+4G1qDNPk/dScNUjUyUfA9S5T79dF+tBZjjnv4pTXUx7wtS87CLKk4PvlSC2tqOJUKL1Kg==
+"@nuxtjs/vuetify@^0.5.5":
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/vuetify/-/vuetify-0.5.5.tgz#0c556afc6ea638dd8e28bf6100b69138fc1b57e3"
+  integrity sha512-koSWjuMHN6KYu0O1aeDpY0xVgohKdoWlZCHRdeTUaY07H9SbVQQee0Mj0mrKXAh0ShOpcAoUCX6ttKuS1tap6w==
   dependencies:
-    vuetify "^1.5.0"
+    vuetify "^1.5.1"
 
 "@nuxtjs/workbox@3.0.0-beta.6":
   version "3.0.0-beta.6"
@@ -7343,17 +7343,17 @@ vue@^2.5.22:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.22.tgz#3bf88041af08b8539c37b268b70ca79245e9cc30"
   integrity sha512-pxY3ZHlXNJMFQbkjEgGVMaMMkSV1ONpz+4qB55kZuJzyJOhn6MSy/YZdzhdnumegNzVTL/Dn3Pp4UrVBYt1j/g==
 
-vuetify-loader@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/vuetify-loader/-/vuetify-loader-1.2.0.tgz#2db23b368516d23a39dddec71ecb43452447edc2"
-  integrity sha512-hxdUnfDty5nHFT1G3AbqWU1PD3P5DA6Bq6ZMzw65gwfvShYyoF/l/zMnsFoHKXeU8fFFGnnNhAFtYDQ/U+2e0w==
+vuetify-loader@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/vuetify-loader/-/vuetify-loader-1.2.1.tgz#7b4724d9566ad4c400dec69d0192b83af0924c63"
+  integrity sha512-p4WEVvWt6/5Xm5H8A4ESzWlheAbPbQAhojhcpf9SnOIH9894mBmU4l7asuD7xZ2E/MTl1BeX3ZZj2hrv7/NIxQ==
   dependencies:
     loader-utils "^1.1.0"
 
-vuetify@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.0.tgz#b7334f525b5dd416b01d5e9ddbadad22beeb9d7f"
-  integrity sha512-I2bITwvtkfbUf2hfrKo3Uta4egpv5KzEcKR1czgdyjZdA1nlo96XV2EDu0XetLl6p+AjhOqwlZWbLSezy9ZZmQ==
+vuetify@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.1.tgz#422e0ec31c080494446559bfcf0b0ba0c749f74e"
+  integrity sha512-f/9al/DZzUEk5YWNaF/AMRZEQViSBjIqx/fRz6DF397O/rCOZt1VnjmqHqQizioiWy6M2zWVbrUvx4pCfQK3Ig==
 
 vuex-module-decorators@^0.9.8:
   version "0.9.8"
