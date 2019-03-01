@@ -16,7 +16,7 @@
     "@nuxtjs/google-analytics": "^2.0.3",
     "@nuxtjs/pwa": "^3.0.0-beta.6",
     "@nuxtjs/vuetify": "^0.5.5",
-    "nuxt-ts": "^2.4.3",
+    "nuxt-ts": "^2.4.5",
     "nuxt-webfontloader": "^1.0.0",
     "vue-property-decorator": "^7.3.0",
     "vuex-module-decorators": "^0.9.8"

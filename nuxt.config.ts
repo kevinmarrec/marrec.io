@@ -22,7 +22,6 @@ export default {
   modules: [
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
-    '@nuxtjs/redirect-module',
     '@nuxtjs/vuetify',
     'nuxt-webfontloader'
   ],
@@ -36,10 +35,6 @@ export default {
       { field: 'anonymizeIp', value: true }
     ]
   },
-
-  redirect: [
-    { from: '/fr', to: '/', statusCode: 301 }
-  ],
 
   vuetify: {
     css: !isProduction,
