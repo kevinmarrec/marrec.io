@@ -1,6 +1,6 @@
 {
   "name": "marrec.io",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Kevin Marrec",
   "private": true,
   "license": "MIT",
@@ -24,7 +24,7 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
     "@typescript-eslint/eslint-plugin": "^1.4.2",
-    "eslint": "^5.14.1",
+    "eslint": "^5.15.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jest": "^22.3.0",
