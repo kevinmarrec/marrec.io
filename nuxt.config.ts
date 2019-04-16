@@ -1,50 +1,13 @@
-import { build, head, hooks, manifest, meta } from './config'
-
-const isProduction: boolean = process.env.NODE_ENV === 'production'
+import { build, css, head, hooks, manifest, meta, modules, utils } from './config'
 
 export default {
   build,
+  css,
   head,
   hooks,
   manifest,
   meta,
-  modern: isProduction,
-  watch: ['~/config/*'],
-
-  css: [
-    '~/assets/style/app.styl'
-  ],
-
-  /**
-   * Modules
-   */
-
-  modules: [
-    '@nuxtjs/google-analytics',
-    '@nuxtjs/pwa',
-    '@nuxtjs/vuetify',
-    'nuxt-webfontloader'
-  ],
-
-  'google-analytics': {
-    debug: {
-      sendHitTask: isProduction
-    },
-    id: 'UA-131596114-1',
-    set: [
-      { field: 'anonymizeIp', value: true }
-    ]
-  },
-
-  vuetify: {
-    css: !isProduction,
-    materialIcons: false,
-    treeShake: isProduction
-  },
-
-  webfontloader: {
-    google: {
-      families: ['Roboto:300,400,500,700']
-    }
-  }
+  modern: utils.isProduction,
+  modules,
+  watch: ['~/config/*']
 }
