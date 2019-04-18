@@ -1,13 +1,13 @@
 {
   "name": "marrec.io",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "author": "Kevin Marrec",
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt -c config",
+    "build": "nuxt build -c config",
+    "start": "nuxt start -c config",
     "generate": "nuxt generate",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "lint:fix": "yarn lint --fix"

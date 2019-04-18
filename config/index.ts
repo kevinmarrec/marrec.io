@@ -1,10 +1,20 @@
-import * as _utils from './utils'
-export const utils = _utils
+import build from './build'
+import css from './css'
+import head from './head'
+import hooks from './hooks'
+import manifest from './manifest'
+import meta from './meta'
+import modules from './modules'
+import { isProduction } from './utils'
 
-export { default as build } from './build'
-export { default as css } from './css'
-export { default as head } from './head'
-export { default as hooks } from './hooks'
-export { default as manifest } from './manifest'
-export { default as meta } from './meta'
-export { default as modules } from './modules'
+export default {
+  build,
+  css,
+  head,
+  hooks,
+  manifest,
+  meta,
+  modern: isProduction,
+  modules,
+  watch: ['~/config/*']
+}
