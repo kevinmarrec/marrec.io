@@ -19,8 +19,7 @@
     "nuxt": "^2.6.2",
     "nuxt-webfontloader": "^1.0.0",
     "ts-node": "^8.1.0",
-    "vue-property-decorator": "^8.1.0",
-    "vuex-module-decorators": "^0.9.8"
+    "vue-property-decorator": "^8.1.0"
   },
   "devDependencies": {
     "@nuxt/typescript": "^2.6.2",
