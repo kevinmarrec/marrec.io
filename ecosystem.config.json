@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "marrec.io",
-      "script": "./node_modules/.bin/nuxts",
+      "script": "./node_modules/.bin/nuxt",
       "args": "start",
       "instances": 2,
       "exec_mode": "cluster",
