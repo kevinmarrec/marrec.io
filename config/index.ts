@@ -16,5 +16,12 @@ export default {
   meta,
   modern: isProduction,
   modules,
-  watch: ['~/config/*']
+  watch: ['~/config/*'],
+  // Temporary config, should be in `~/config/modules/webfont-loader`
+  // https://github.com/Developmint/nuxt-webfontloader/pull/15 - waiting release
+  webfontloader: {
+    google: {
+      families: ['Roboto:300,400,500,700', 'Lobster:400']
+    }
+  }
 }

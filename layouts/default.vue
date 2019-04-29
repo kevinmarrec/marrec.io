@@ -1,18 +1,18 @@
 <template>
   <v-app>
-    <v-toolbar app color="primary" dark>
+    <v-app-bar app color="primary" dark>
       <v-flex text-xs-center>
-        <span class="title font-weight-bold">
+        <span class="headline font-weight-bold">
           Marrec.io
         </span>
       </v-flex>
-    </v-toolbar>
+    </v-app-bar>
     <v-content>
       <v-container fill-height>
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer app color="primary" dark class="pa-3">
+    <v-footer app color="primary" dark>
       <v-spacer />
       <span>v{{ version }}</span>
     </v-footer>

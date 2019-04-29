@@ -26,8 +26,7 @@
     },
     "types": [
       "@types/node",
-      "@nuxt/vue-app",
-      "vuetify"
+      "@nuxt/vue-app"
     ]
   }
 }

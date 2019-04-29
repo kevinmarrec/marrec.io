@@ -2,7 +2,7 @@
   <v-layout column>
     <v-layout column justify-center align-center>
       <v-avatar :size="avatarSize">
-        <img src="/img/me.jpg" alt="avatar" class="elevation-10" :style="`border: 4px solid ${$vuetify.theme.secondary};`">
+        <img src="/img/me.jpg" alt="avatar" class="elevation-10" style="border: 4px solid black;">
       </v-avatar>
       <h1 class="mt-4 display-1 primary--text font-weight-medium">
         Kevin Marrec
@@ -30,8 +30,3 @@ export default class PageIndex extends Vue {
   }
 }
 </script>
-
-<style lang="stylus" scoped>
-.v-btn
-  min-width 0
-</style>
