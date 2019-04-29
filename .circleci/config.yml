@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/project
   docker:
-    - image: node:11-alpine
+    - image: circleci/node:11
 
 master_only: &master_only
   filters:
