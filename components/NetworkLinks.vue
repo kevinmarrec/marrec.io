@@ -14,7 +14,7 @@
           :href="link.url"
           :aria-label="link.label"
           rel="noreferrer noopener"
-          target="blank"
+          target="_blank"
         >
           <v-icon v-text="`$vuetify.icons.${link.icon}`" />
         </v-btn>
