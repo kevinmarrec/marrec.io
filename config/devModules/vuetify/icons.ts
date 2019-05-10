@@ -1,12 +1,7 @@
-import * as icons from '@mdi/js'
+import * as mdi from '@mdi/js'
 
-const paths = {
-  github: icons.mdiGithubCircle,
-  linkedin: icons.mdiLinkedin,
-  twitter: icons.mdiTwitter
+export default {
+  github: mdi.mdiGithubCircle,
+  linkedin: mdi.mdiLinkedin,
+  twitter: mdi.mdiTwitter
 }
-
-export default Object.keys(paths).reduce((result, key) => {
-  result[key] = `svg-${paths[key]}`
-  return result
-}, {})
