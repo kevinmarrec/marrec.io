@@ -8,7 +8,7 @@
     "dev": "nuxt -c config",
     "build": "nuxt build -c config",
     "start": "nuxt start -c config",
-    "generate": "nuxt generate",
+    "generate": "nuxt generate -c config",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "lint:fix": "yarn lint --fix"
   },
