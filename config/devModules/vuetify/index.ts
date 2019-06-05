@@ -7,7 +7,9 @@ declare module 'vue/types/vue' {
 }
 
 export default ['@nuxtjs/vuetify', {
-  assets: false,
+  defaultAssets: {
+    icons: false
+  },
   icons: {
     iconfont: 'mdiSvg',
     values: icons
