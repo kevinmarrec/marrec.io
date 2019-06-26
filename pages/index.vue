@@ -7,26 +7,32 @@
       <h1 class="mt-4 display-1 primary--text font-weight-medium">
         Kevin Marrec
       </h1>
-      <div class="mt-2">
-        wants to let you know that
+      <div class="mt-3 text-xs-center">
+        <p>wants to let you know that</p>
+        <p class="primary--text font-weight-bold">
+          His website is under construction !
+        </p>
       </div>
-      <code class="mt-2 primary--text">His website is under construction !</code>
     </v-layout>
     <NetworkLinks />
   </v-layout>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import Vue from 'vue'
+import { computed } from 'vue-function-api'
 
-@Component({
+export default Vue.extend({
+  name: 'PageIndex',
   components: {
     NetworkLinks: () => import('~/components/NetworkLinks.vue')
+  },
+  setup (props, ctx) {
+    const avatarSize = computed(() => ctx.root.$vuetify.breakpoint.mdAndUp ? '200' : '170')
+
+    return {
+      avatarSize
+    }
   }
 })
-export default class PageIndex extends Vue {
-  get avatarSize () {
-    return this.$vuetify.breakpoint.mdAndUp ? '200' : '170'
-  }
-}
 </script>

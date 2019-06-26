@@ -20,18 +20,21 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import Vue from 'vue'
 import { version } from '~/package.json'
 
-@Component({
+export default Vue.extend({
   head () {
     return {
       title: 'Kevin Marrec',
       titleTemplate: '%s | Marrec.io'
     }
+  },
+
+  setup () {
+    return {
+      version
+    }
   }
 })
-export default class LayoutDefault extends Vue {
-  version = version
-}
 </script>

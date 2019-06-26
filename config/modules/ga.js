@@ -1,8 +1,6 @@
-import { isProduction } from '../utils'
-
 export default ['@nuxtjs/google-analytics', {
   debug: {
-    sendHitTask: isProduction
+    sendHitTask: process.env.NODE_ENV === 'production'
   },
   id: 'UA-131596114-1',
   set: [

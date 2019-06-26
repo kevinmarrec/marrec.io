@@ -24,16 +24,23 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { state } from 'vue-function-api'
 
-@Component
-export default class NetworkLinks extends Vue {
-  links = [
-    { icon: 'github', label: 'Github', url: 'https://github.com/kevinmarrec' },
-    { icon: 'twitter', label: 'Twitter', url: 'https://twitter.com/K_Marrec' },
-    { icon: 'linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/kevinmarrec' }
-  ]
+export default {
+  name: 'NetworkLinks',
+  setup () {
+    const links: Array<{ icon: string, label: string, url: string }> = state([
+      { icon: 'github', label: 'Github', url: 'https://github.com/kevinmarrec' },
+      { icon: 'twitter', label: 'Twitter', url: 'https://twitter.com/K_Marrec' },
+      { icon: 'linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/kevinmarrec' }
+    ])
+
+    return {
+      links
+    }
+  }
 }
+
 </script>
 
 <style lang="scss" scoped>
