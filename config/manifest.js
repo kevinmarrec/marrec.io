@@ -7,5 +7,5 @@ export default {
   name: 'Marrec.io',
   short_name: 'Marrec.io',
   start_url: '/',
-  theme_color: colors.lightBlue.base
+  theme_color: colors.teal.base
 }
