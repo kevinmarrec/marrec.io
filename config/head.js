@@ -17,7 +17,7 @@ export default {
             addressLocality: 'Rennes, France',
             postalCode: 'F-35000'
           },
-          email: 'mailto:contact@kevinmarrec.com',
+          email: 'mailto:kevin@marrec.io',
           image: 'https://marrec.io/img/me.jpg',
           jobTitle: 'Full-stack Developer',
           name: 'Kevin Marrec',
