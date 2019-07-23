@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <v-flex text-xs-center>
+    <v-app-bar app color="teal" dark>
+      <v-flex text-center>
         <span class="headline font-weight-bold">
           Marrec.io
         </span>
@@ -12,7 +12,7 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-footer app color="primary" dark>
+    <v-footer app color="teal" dark>
       <v-spacer />
       <span>v{{ version }}</span>
     </v-footer>

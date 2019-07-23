@@ -1,5 +1,5 @@
 <template>
-  <v-flex text-xs-center>
+  <v-flex text-center>
     <div class="mt-4 title">
       Find me on
     </div>
@@ -9,8 +9,9 @@
           v-for="(link, index) in links"
           :key="index"
           class="mx-2"
-          color="primary"
+          color="teal"
           dark
+          width="88"
           :href="link.url"
           :aria-label="link.label"
           rel="noreferrer noopener"
@@ -42,9 +43,3 @@ export default {
 }
 
 </script>
-
-<style lang="scss" scoped>
-  .v-btn {
-    width: 88px;
-  }
-</style>
