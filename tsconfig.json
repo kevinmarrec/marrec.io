@@ -27,8 +27,8 @@
     "types": [
       "@types/node",
       "@nuxt/vue-app",
-      "vue-function-api",
-      "vuetify"
+      "@nuxtjs/vuetify",
+      "vue-function-api"
     ]
   },
   "exclude": [
