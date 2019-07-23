@@ -7,7 +7,6 @@ module.exports = {
     '@nuxtjs'
   ],
   rules: {
-    'space-before-function-paren': ['error', 'always'],
-    '@typescript-eslint/no-unused-vars': 'error'
+    '@typescript-eslint/no-unused-vars':  ['error', { args: 'all', argsIgnorePattern: '^_' }]
   }
 }
