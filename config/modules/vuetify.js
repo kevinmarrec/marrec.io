@@ -1,4 +1,5 @@
 import * as mdi from '@mdi/js'
+import colors from 'vuetify/es5/util/colors'
 
 const icons = {
   github: mdi.mdiGithubCircle,
@@ -11,5 +12,12 @@ export default ['@nuxtjs/vuetify', {
   icons: {
     iconfont: 'mdiSvg',
     values: icons
+  },
+  theme: {
+    themes: {
+      light: {
+        primary: colors.teal.base
+      }
+    }
   }
 }]

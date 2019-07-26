@@ -9,7 +9,7 @@
           v-for="(link, index) in links"
           :key="index"
           class="mx-2"
-          color="teal"
+          color="primary"
           dark
           width="88"
           :href="link.url"
