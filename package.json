@@ -16,14 +16,14 @@
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "nuxt": "^2.8.1",
     "ts-node": "^8.3.0",
-    "vue-function-api": "^2.0.6"
+    "vue-function-api": "^2.1.1"
   },
   "devDependencies": {
     "@mdi/js": "^3.8.95",
     "@nuxt/typescript": "^2.8.1",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/google-analytics": "^2.2.0",
-    "@nuxtjs/vuetify": "^1.1.2",
+    "@nuxtjs/vuetify": "^1.2.1",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "eslint": "^6.0.1",
