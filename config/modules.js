@@ -3,6 +3,7 @@ export default {
     '@nuxtjs/vuetify'
   ],
   modules: [
+    '@nuxt/typescript-build',
     '@nuxtjs/pwa',
     '@nuxtjs/google-analytics',
     'nuxt-webfontloader'
