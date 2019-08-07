@@ -1,6 +1,6 @@
 {
   "name": "marrec.io",
-  "version": "0.6.3",
+  "version": "0.7.0",
   "author": "Kevin Marrec",
   "private": true,
   "license": "MIT",
@@ -26,7 +26,7 @@
     "@nuxtjs/vuetify": "^1.2.1",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
-    "eslint": "^6.0.1",
+    "eslint": "^6.1.0",
     "nuxt-webfontloader": "^1.1.0"
   }
 }
