@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@mdi/js": "^3.9.97",
-    "@nuxt/types": "^0.2.0",
     "@nuxt/typescript-build": "^0.1.5",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/google-analytics": "^2.2.0",

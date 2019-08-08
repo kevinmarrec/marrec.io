@@ -1119,7 +1119,7 @@
     serve-static "^1.14.1"
     server-destroy "^1.0.1"
 
-"@nuxt/types@0.2.0", "@nuxt/types@^0.2.0":
+"@nuxt/types@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-0.2.0.tgz#10beab5f2172964ab251b6bb1d90a64c682b52ee"
   integrity sha512-7qhdLdYq0LI7mKfqrvAzIQHW1MBeqh3V+V2OgamoHGmyeV+WCkD/YjUKiLNceubUD47tgYBRzSRhKPYEjmWrcQ==
