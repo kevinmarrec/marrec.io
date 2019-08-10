@@ -1,5 +1,5 @@
 export default {
-  devModules: [
+  buildModules: [
     '@nuxtjs/vuetify'
   ],
   modules: [
