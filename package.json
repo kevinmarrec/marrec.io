@@ -1,6 +1,6 @@
 {
   "name": "marrec.io",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "author": "Kevin Marrec",
   "private": true,
   "license": "MIT",
@@ -14,17 +14,15 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.16",
-    "nuxt-edge": "^2.9.0-26087050.09878cd6",
-    "vue-function-api": "^2.1.1"
+    "nuxt-edge": "^2.9.0-26089929.de7ed24b",
+    "vue-function-api": "^2.1.2"
   },
   "devDependencies": {
     "@mdi/js": "^3.9.97",
-    "@nuxt/typescript-build": "^0.1.5",
-    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxt/typescript-build": "^0.1.7",
+    "@nuxtjs/eslint-config-typescript": "^0.1.2",
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/vuetify": "^1.2.1",
-    "@typescript-eslint/eslint-plugin": "^1.13.0",
-    "@typescript-eslint/parser": "^1.13.0",
     "eslint": "^6.1.0",
     "nuxt-webfontloader": "^1.1.0"
   }
