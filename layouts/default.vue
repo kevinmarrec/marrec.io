@@ -20,10 +20,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { createComponent } from '@vue/composition-api'
 import { version } from '~/package.json'
 
-export default Vue.extend({
+export default createComponent({
   head () {
     return {
       title: 'Kevin Marrec',

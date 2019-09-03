@@ -19,19 +19,19 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { computed } from 'vue-function-api'
+import { createComponent, computed } from '@vue/composition-api'
+import NetworkLinks from '~/components/NetworkLinks.vue'
 
-export default Vue.extend({
+export default createComponent({
   name: 'PageIndex',
-  components: {
-    NetworkLinks: () => import('~/components/NetworkLinks.vue')
-  },
-  setup (_props, { root: { $vuetify } }) {
-    const avatarSize = computed(() => $vuetify.breakpoint.mdAndUp ? '200' : '170')
 
+  components: {
+    NetworkLinks
+  },
+
+  setup (_props, { root: { $vuetify } }) {
     return {
-      avatarSize
+      avatarSize: computed(() => $vuetify.breakpoint.mdAndUp ? '200' : '170')
     }
   }
 })

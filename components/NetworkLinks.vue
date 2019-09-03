@@ -10,7 +10,6 @@
           :key="index"
           class="mx-2"
           color="primary"
-          dark
           width="88"
           :href="link.url"
           :aria-label="link.label"
@@ -25,12 +24,11 @@
 </template>
 
 <script lang="ts">
-import { state } from 'vue-function-api'
+import { createComponent, reactive } from '@vue/composition-api'
 
-export default {
-  name: 'NetworkLinks',
+export default createComponent({
   setup () {
-    const links: Array<{ icon: string, label: string, url: string }> = state([
+    const links: Array<{ icon: string, label: string, url: string }> = reactive([
       { icon: 'github', label: 'Github', url: 'https://github.com/kevinmarrec' },
       { icon: 'twitter', label: 'Twitter', url: 'https://twitter.com/K_Marrec' },
       { icon: 'linkedin', label: 'LinkedIn', url: 'https://www.linkedin.com/in/kevinmarrec' }
@@ -40,6 +38,5 @@ export default {
       links
     }
   }
-}
-
+})
 </script>
