@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "@vue/composition-api": "^0.3.0",
-    "nuxt-edge": "^2.10.0-26123052.0daaf87c"
+    "nuxt-edge": "^2.10.0-26124491.ad223583"
   },
   "devDependencies": {
     "@mdi/js": "^4.2.95",
