@@ -18,7 +18,7 @@
     "nuxt-edge": "^2.10.0-26130249.376b2b07"
   },
   "devDependencies": {
-    "@mdi/js": "^4.2.95",
+    "@mdi/js": "^4.3.95",
     "@nuxt/typescript-build": "^0.2.6",
     "@nuxtjs/eslint-config-typescript": "^0.1.2",
     "@nuxtjs/google-analytics": "^2.2.0",
