@@ -1310,10 +1310,10 @@
     "@nuxtjs/pwa-utils" "3.0.0-beta.16"
     "@nuxtjs/workbox" "3.0.0-beta.16"
 
-"@nuxtjs/vuetify@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/vuetify/-/vuetify-1.7.0.tgz#7122ce66386809207f87ae8ebd40ef22010ced40"
-  integrity sha512-2I3AEoWSmqtPdM+zzeqcNn6QBdlDt9ULmBsYiSxW8Q7Ioj7S7Xi2Mwj/at95wObnZKvmDnUYr84ibSTZ+dys7w==
+"@nuxtjs/vuetify@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/vuetify/-/vuetify-1.7.1.tgz#b0dde2414b4d1804b61734596620cc17b17785a7"
+  integrity sha512-dhbwnDD2Eabyi8Cqmym8zPvSKE4PxbeOAq9HP9iLixVptE/Qz3c+EPPHvvqKu3VTu2sKGVuicJdNb1Fpqt0AOg==
   dependencies:
     deepmerge "^4.0.0"
     fibers "^4.0.1"
