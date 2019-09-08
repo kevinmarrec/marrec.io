@@ -22,7 +22,7 @@
     "@nuxt/typescript-build": "^0.2.6",
     "@nuxtjs/eslint-config-typescript": "^0.1.2",
     "@nuxtjs/google-analytics": "^2.2.0",
-    "@nuxtjs/vuetify": "^1.7.0",
+    "@nuxtjs/vuetify": "^1.7.1",
     "eslint": "^6.3.0",
     "nuxt-webfontloader": "^1.1.0"
   }
