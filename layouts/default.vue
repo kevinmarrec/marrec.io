@@ -21,9 +21,14 @@
 
 <script lang="ts">
 import { createComponent } from '@vue/composition-api'
+import { VBtn } from 'vuetify/lib'
 import { version } from '~/package.json'
 
 export default createComponent({
+  components: {
+    VBtn
+  },
+
   head () {
     return {
       title: 'Kevin Marrec',
