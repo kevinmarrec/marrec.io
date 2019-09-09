@@ -4,7 +4,7 @@ import meta from './meta'
 import modules from './modules'
 
 export default {
-  build: { publicPath: '/assets/', extractCSS: true },
+  build: { publicPath: '/assets/' },
   css: ['~/assets/style/app'],
   head,
   manifest,
