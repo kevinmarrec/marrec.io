@@ -18,12 +18,15 @@
     "nuxt": "^2.9.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
     "@mdi/js": "^4.4.95",
     "@nuxt/typescript-build": "^0.2.6",
     "@nuxtjs/eslint-config-typescript": "^0.1.2",
     "@nuxtjs/google-analytics": "^2.2.0",
     "@nuxtjs/vuetify": "^1.8.3",
     "eslint": "^6.3.0",
+    "husky": "^3.0.5",
     "nuxt-webfontloader": "^1.1.0"
   }
 }
