@@ -23,6 +23,9 @@ export default {
     defaultAssets: {
       icons: false
     },
-    optionsPath: '~/vuetify/index.js'
+    optionsPath: '~/vuetify/index.js',
+    treeShake: process.env.NODE_ENV === 'production' && {
+      components: ['VBtn']
+    }
   }
 }
