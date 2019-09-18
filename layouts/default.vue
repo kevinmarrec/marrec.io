@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <v-flex text-center>
+      <v-row justify="center">
         <span class="headline font-weight-bold">
           Marrec.io
         </span>
-      </v-flex>
+      </v-row>
     </v-app-bar>
     <v-content>
       <v-container fill-height>
@@ -21,14 +21,9 @@
 
 <script lang="ts">
 import { createComponent } from '@vue/composition-api'
-import { VBtn } from 'vuetify/lib'
 import { version } from '~/package.json'
 
 export default createComponent({
-  components: {
-    VBtn
-  },
-
   head () {
     return {
       title: 'Kevin Marrec',
