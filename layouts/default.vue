@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <v-flex text-center>
+      <v-row justify="center">
         <span class="headline font-weight-bold">
           Marrec.io
         </span>
-      </v-flex>
+      </v-row>
     </v-app-bar>
     <v-content>
       <v-container fill-height>

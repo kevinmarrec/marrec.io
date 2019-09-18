@@ -1,10 +1,10 @@
 <template>
-  <v-flex text-center>
-    <div class="mt-4 title">
+  <v-row dense>
+    <v-col cols="12" class="title text-center">
       Find me on
-    </div>
-    <div class="mt-2">
-      <v-layout justify-center>
+    </v-col>
+    <v-col cols="12">
+      <v-row justify="center">
         <v-btn
           v-for="(link, index) in links"
           :key="index"
@@ -18,9 +18,9 @@
         >
           <v-icon v-text="`$vuetify.icons.${link.icon}`" />
         </v-btn>
-      </v-layout>
-    </div>
-  </v-flex>
+      </v-row>
+    </v-col>
+  </v-row>
 </template>
 
 <script lang="ts">
