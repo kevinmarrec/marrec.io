@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.19",
     "@vue/composition-api": "^0.3.2",
-    "nuxt": "^2.9.2"
+    "nuxt": "^2.10.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
