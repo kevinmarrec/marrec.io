@@ -20,7 +20,7 @@ export default defineComponent({
     <h1 class="font-400 text-3xl mt-4">
       <span class="text-green-600">K</span>evin <span class="text-green-600">M</span>arrec
     </h1>
-    <h2 class="text-green-700 text-xl">
+    <h2 class="text-green-600 text-xl">
       Passionate Developer
     </h2>
     <div class="flex text-white mt-6">
