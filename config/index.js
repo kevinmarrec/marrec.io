@@ -1,15 +1,23 @@
+import build from './build'
+import { isProduction } from './env'
 import head from './head'
 import manifest from './manifest'
 import meta from './meta'
-import modules from './modules'
+import { buildModules, modules } from './modules'
+import plugins from './plugins'
 
 export default {
-  build: { publicPath: '/assets/', extractCSS: true },
-  css: ['~/assets/style/app'],
+  build,
+  buildModules,
+  components: true,
+  generate: {
+    fallback: true
+  },
   head,
   manifest,
   meta,
-  modern: process.env.NODE_ENV === 'production',
-  ...modules,
-  plugins: ['~/config/plugins/function']
+  modern: isProduction && 'client',
+  modules,
+  plugins,
+  telemetry: false
 }

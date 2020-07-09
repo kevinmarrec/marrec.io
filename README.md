@@ -1,2 +1,1 @@
-# marrec.io
-Own website
+# Some project

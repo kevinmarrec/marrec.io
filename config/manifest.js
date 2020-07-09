@@ -1,11 +1,11 @@
-import colors from 'vuetify/es5/util/colors'
+import { colors } from 'tailwindcss/defaultTheme'
 
 export default {
-  background_color: colors.grey.lighten5,
-  display: 'standalone',
-  lang: 'en',
   name: 'Marrec.io',
   short_name: 'Marrec.io',
+  lang: 'en',
   start_url: '/',
-  theme_color: colors.teal.base
+  display: 'standalone',
+  background_color: colors.gray['900'],
+  theme_color: colors.green['600']
 }

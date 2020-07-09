@@ -9,10 +9,13 @@ node_modules
 .vscode
 
 # Nuxt build
-.nuxt
+.nuxt*
 
 # Nuxt generate
 dist
 
 # Local Service Workers
 sw.*
+
+# Environment files
+.env*

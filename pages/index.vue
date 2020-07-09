@@ -1,40 +1,41 @@
-<template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" class="text-center">
-      <v-avatar :size="avatarSize">
-        <img src="/img/me.jpg" alt="avatar" class="elevation-10" style="border: 4px solid black;">
-      </v-avatar>
-      <h1 class="mt-4 display-1 primary--text font-weight-medium">
-        Kevin Marrec
-      </h1>
-      <div class="mt-3">
-        <p>wants to let you know that</p>
-        <p class="primary--text font-weight-bold">
-          His website is under construction !
-        </p>
-      </div>
-    </v-col>
-    <v-col cols="12">
-      <NetworkLinks />
-    </v-col>
-  </v-row>
-</template>
-
 <script lang="ts">
-import { createComponent, computed } from '@vue/composition-api'
-import NetworkLinks from '~/components/NetworkLinks.vue'
+import { defineComponent } from '@vue/composition-api'
 
-export default createComponent({
-  name: 'PageIndex',
-
-  components: {
-    NetworkLinks
-  },
-
-  setup (_props, { root: { $vuetify } }) {
+export default defineComponent({
+  setup () {
     return {
-      avatarSize: computed(() => $vuetify.breakpoint.mdAndUp ? '200' : '170')
+      networkLinks: [
+        { icon: 'github', label: 'GitHub', link: 'https://github.com/kevinmarrec' },
+        { icon: 'twitter', label: 'Twitter', link: 'https://twitter.com/K_Marrec' },
+        { icon: 'linkedin', label: 'LinkedIn', link: 'https://www.linkedin.com/in/kevinmarrec' }
+      ]
     }
   }
 })
 </script>
+
+<template>
+  <main class="container h-screen mx-auto flex flex-col justify-center items-center">
+    <img src="/img/me.jpg" alt="avatar" class="w-64 h-64 rounded-full border-4 border-green-600">
+    <h1 class="font-400 text-3xl mt-4">
+      <span class="text-green-600">K</span>evin <span class="text-green-600">M</span>arrec
+    </h1>
+    <h2 class="text-green-700 text-xl">
+      Passionate Developer
+    </h2>
+    <div class="flex text-white mt-6">
+      <a
+        v-for="{ icon, label, link } in networkLinks"
+        :key="icon"
+        :href="link"
+        :aria-label="label"
+        rel="noreferred noopener"
+        target="_blank"
+        class="rounded-lg bg-green-600 text-lg font-semibold hover:bg-green-500 px-8 py-2 mx-2"
+      >
+        <Icon :name="icon" />
+      </a>
+      </h1>
+    </div>
+  </main>
+</template>
