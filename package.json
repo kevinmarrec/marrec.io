@@ -16,7 +16,7 @@
     "@vue/composition-api": "^1.0.0-beta.3",
     "graphql": "^15.3.0",
     "nuxt": "^2.13.3",
-    "postcss-nested": "^4.2.2",
+    "postcss-nested": "^4.2.3",
     "villus": "^0.4.2"
   },
   "devDependencies": {
