@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hasura
+  labels:
+    app: hasura
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hasura
+  template:
+    metadata:
+      labels:
+        app: hasura
+    spec:
+      containers:
+      - name: hasura
+        image: hasura/graphql-engine:v1.3.0
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: HASURA_GRAPHQL_DATABASE_URL
+          value: ?
+        - name: HASURA_GRAPHQL_ENABLE_CONSOLE
+          value: "true"
+        - name: HASURA_GRAPHQL_ADMIN_SECRET
+          value: ?
+        ports:
+        - containerPort: 8080
+---
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: hasura
+    labels:
+      app: hasura
+  spec:
+    selector:
+      app: hasura
+    ports:
+    - port: 8080

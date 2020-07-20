@@ -1,0 +1,10 @@
+- table:
+    schema: public
+    name: lol
+  select_permissions:
+  - role: awesome
+    permission:
+      columns:
+      - id
+      - name
+      filter: {}
