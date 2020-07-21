@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nuxt dev -c config",
-    "generate": "nuxt generate -c config",
-    "start": "nuxt serve -c config",
+    "build": "nuxt build -c config",
+    "start": "nuxt start -c config",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "lint:fix": "yarn lint --fix"
   },

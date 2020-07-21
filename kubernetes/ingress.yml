@@ -9,5 +9,5 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: hasura
-          servicePort: 8080
+          serviceName: nuxt
+          servicePort: 3000
