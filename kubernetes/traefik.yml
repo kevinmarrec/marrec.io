@@ -7,13 +7,13 @@ metadata:
     k8s.scw.cloud/ingress: traefik2
 spec:
   type: LoadBalancer
-  loadBalancerIP: X.X.X.X
+  loadBalancerIP: 195.154.71.32
   ports:
-  - port: 80
-    name: http
-    targetPort: 8000
-  - port: 443
-    name: https
-    targetPort: 8443
+  - name: web
+    port: 80
+    targetPort: web
+  - name: webesecure
+    port: 443
+    targetPort: websecure
   selector:
     app.kubernetes.io/name: traefik

@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: test-cert
+  namespace: default
+spec:
+  commonName: test.marrec.io
+  secretName: test-cert
+  dnsNames:
+    - test.marrec.io
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer

@@ -1,0 +1,39 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: test-secure
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`test.marrec.io`)
+      kind: Rule
+      services:
+        - name: nuxt
+          port: 3000
+  tls:
+    secretName: test-cert
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: test
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`test.marrec.io`)
+      kind: Rule
+      services:
+        - name: nuxt
+          port: 3000
+      middlewares:
+        - name: test-redirectscheme
+---
+  apiVersion: traefik.containo.us/v1alpha1
+  kind: Middleware
+  metadata:
+    name: test-redirectscheme
+  spec:
+    redirectScheme:
+      scheme: https
