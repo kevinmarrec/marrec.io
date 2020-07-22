@@ -21,7 +21,7 @@ export default defineComponent({
       <span class="text-green-600">K</span>evin <span class="text-green-600">M</span>arrec
     </h1>
     <h2 class="text-green-600 text-xl">
-      Passionate Developer
+      [Test] Passionate Developer [Test]
     </h2>
     <div class="flex text-white mt-6">
       <a
@@ -35,7 +35,6 @@ export default defineComponent({
       >
         <Icon :name="icon" />
       </a>
-      </h1>
     </div>
   </main>
 </template>
