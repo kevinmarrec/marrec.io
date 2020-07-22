@@ -1,5 +1,8 @@
 export default {
   __dangerouslyDisableSanitizers: ['script'],
+  meta: [
+    { name: 'robots', content: 'noindex, nofollow' }
+  ],
   script: [
     {
       type: 'application/ld+json',

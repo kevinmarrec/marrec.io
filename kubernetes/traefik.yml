@@ -17,3 +17,12 @@ spec:
     targetPort: websecure
   selector:
     app.kubernetes.io/name: traefik
+
+# 1) Check if IngressClass of 'traefik' DeamonSet is already set
+# kubectl get ds/traefik -n kube-system -o json | jq .spec.template.spec.containers[0].args
+     
+# 2) Add 'traefik-cert-manager' as IngressClass of 'traefik' DeamonSet
+# kubectl patch ds/traefik -n kube-system --type=json -p '[{"op": "add", "path": "/spec/template/spec/containers/0/args/-", "value": "--providers.kubernetesIngress.ingressClass=traefik-cert-manager" }]'
+
+# 3) Wait for 'traefik' pods being ready
+# kubectl get pods -n kube-system -l app.kubernetes.io/name=traefik

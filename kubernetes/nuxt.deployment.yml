@@ -16,22 +16,9 @@ spec:
     spec:
       containers:
       - name: nuxt
-        image: rg.fr-par.scw.cloud/kevinmarrec/nuxt:v1
-        imagePullPolicy: Always
+        image: rg.fr-par.scw.cloud/kevinmarrec/nuxt:latest
         env:
         - name: NUXT_PORT
           value: "3000"
         ports:
         - containerPort: 3000
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: nuxt
-  labels:
-    app: nuxt
-spec:
-  selector:
-    app: nuxt
-  ports:
-  - port: 3000

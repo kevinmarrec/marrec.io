@@ -1,11 +1,11 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
-  name: test-cert
+  name: nuxt-cert
   namespace: default
 spec:
   commonName: test.marrec.io
-  secretName: test-cert
+  secretName: nuxt-cert-secret
   dnsNames:
     - test.marrec.io
   issuerRef:

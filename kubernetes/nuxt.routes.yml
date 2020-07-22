@@ -1,7 +1,7 @@
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: test-secure
+  name: nuxt-secure
 spec:
   entryPoints:
     - websecure
@@ -12,12 +12,12 @@ spec:
         - name: nuxt
           port: 3000
   tls:
-    secretName: test-cert
+    secretName: nuxt-cert-secret
 ---
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: test
+  name: nuxt
 spec:
   entryPoints:
     - web
@@ -28,12 +28,4 @@ spec:
         - name: nuxt
           port: 3000
       middlewares:
-        - name: test-redirectscheme
----
-  apiVersion: traefik.containo.us/v1alpha1
-  kind: Middleware
-  metadata:
-    name: test-redirectscheme
-  spec:
-    redirectScheme:
-      scheme: https
+        - name: https-redirect
