@@ -1,7 +1,0 @@
-version: 2
-endpoint: http://localhost
-metadata_directory: metadata
-admin_secret: hktest
-actions:
-  kind: synchronous
-  handler_webhook_baseurl: http://localhost:3000
