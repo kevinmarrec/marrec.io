@@ -1,0 +1,15 @@
+.ripple {
+    transform: scale(0);
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0;
+    background-color: #000;
+    animation: ease 0.6s 1 forwards ripple;
+  }
+
+  @keyframes ripple {
+    to {
+      opacity: 0.5;
+      transform: scale(2);
+    }
+  }

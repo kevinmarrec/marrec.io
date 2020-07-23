@@ -16,18 +16,18 @@ export default defineComponent({
 
 <template>
   <main class="container h-screen mx-auto flex flex-col justify-center items-center">
-    <img src="/img/me.jpg" alt="avatar" class="w-64 h-64 rounded-full border-4 border-green-600">
-    <h1 class="font-400 text-3xl mt-4">
+    <!-- <img src="/img/me.jpg" alt="avatar" class="w-64 h-64 rounded-full border-4 border-green-600"> -->
+    <!-- <h1 class="font-400 text-3xl mt-4">
       <span class="text-green-600">K</span>evin <span class="text-green-600">M</span>arrec
     </h1>
     <h2 class="text-green-600 text-xl">
       [Test] Passionate Developer [Test]
-    </h2>
+    </h2> -->
     <div class="flex text-white mt-6">
       <a
         v-for="{ icon, label, link } in networkLinks"
         :key="icon"
-        :href="link"
+        v-ripple
         :aria-label="label"
         rel="noreferred noopener"
         target="_blank"
