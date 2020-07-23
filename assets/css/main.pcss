@@ -3,3 +3,9 @@ body {
   @apply bg-gray-900 text-gray-300
 }
 
+a, button, *[tabindex] {
+  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; /* Remove blue background on mobile (chrome) */
+  transition: background .25s ease-out;
+}
