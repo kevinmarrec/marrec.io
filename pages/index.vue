@@ -25,7 +25,7 @@ export default defineComponent({
     </h2>
     <div class="flex text-white mt-6">
       <a
-        v-for="({ icon, label, link }, i) in networkLinks"
+        v-for="{ icon, label, link } in networkLinks"
         :key="icon"
         v-ripple
         :href="link"
