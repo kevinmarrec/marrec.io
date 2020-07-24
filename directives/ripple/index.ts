@@ -16,7 +16,7 @@ const rippleDirective: DirectiveOptions = {
       const container = el.getBoundingClientRect()
 
       const ripple = document.createElement('div')
-      ripple.classList.add('ripple')
+      ripple.className = 'ripple'
       ripple.style.top = (event.clientY - container.y) + 'px'
       ripple.style.left = (event.clientX - container.x) + 'px'
 
@@ -39,7 +39,7 @@ const rippleDirective: DirectiveOptions = {
           setTimeout(() => {
             el.removeEventListener('mouseup', stop)
             el.removeEventListener('mouseleave', stop)
-            ripple.parentNode && ripple.parentNode.removeChild(ripple)
+            ripple.remove()
           }, transitionDuration)
         }, finished ? 0 : 200)
       }
