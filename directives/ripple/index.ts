@@ -17,19 +17,23 @@ const rippleDirective: DirectiveOptions = {
 
       const ripple = document.createElement('div')
       ripple.className = 'ripple'
-      ripple.style.top = (event.clientY - container.y) + 'px'
-      ripple.style.left = (event.clientX - container.x) + 'px'
 
       el.insertBefore(ripple, el.firstChild)
 
       const transitionDuration = (+getComputedStyle(ripple).transitionDuration.slice(0, -1) * 1000)
 
       const size = Math.sqrt(
-        (container.width + Math.abs(container.width / 2 - ripple.offsetLeft) * 2) ** 2 +
-        (container.height + Math.abs(container.height / 2 - ripple.offsetTop) * 2) ** 2
+        (container.width + Math.abs(container.width / 2 - (event.clientX - container.x)) * 2) ** 2 +
+        (container.height + Math.abs(container.height / 2 - (event.clientY - container.y)) * 2) ** 2
       )
 
-      setTimeout(() => { ripple.style.transform = `scale(${size})` })
+      ripple.style.top = (event.clientY - container.y - size / 2) + 'px'
+      ripple.style.left = (event.clientX - container.x - size / 2) + 'px'
+      ripple.style.width = size + 'px'
+      ripple.style.height = size + 'px'
+
+
+      setTimeout(() => { ripple.style.transform = 'scale(1)' })
       setTimeout(() => { finished = true }, transitionDuration)
 
       const stop = () => {
@@ -41,7 +45,7 @@ const rippleDirective: DirectiveOptions = {
             el.removeEventListener('mouseleave', stop)
             ripple.remove()
           }, transitionDuration)
-        }, finished ? 0 : 200)
+        }, finished ? 0 : transitionDuration / 2)
       }
 
       el.addEventListener('mouseup', stop)
