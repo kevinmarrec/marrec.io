@@ -1,0 +1,7 @@
+{
+  "watch": [
+    "."
+  ],
+  "ext": "ts",
+  "exec": "ts-node -O '{\"module\":\"CommonJS\"}' ./objectstorage.ts"
+}

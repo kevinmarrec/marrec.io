@@ -1,41 +1,83 @@
-import { createHmac, HexBase64Latin1Encoding } from 'crypto'
+import { extname } from 'path'
+import fetch from 'node-fetch'
+import express from 'express'
+import multer from 'multer'
+import aws4 from 'aws4'
+import sharp from 'sharp'
+import { v4 as uuid } from 'uuid'
 
-function hmac (key: string, string: string, encoding?: HexBase64Latin1Encoding) {
-  return createHmac('sha256', key)
-    .update(string, 'utf8')
-    .digest(encoding!)
+const upload = multer()
+const app = express()
+
+const bucket = 'bucktests'
+const server = 's3.fr-par.scw.cloud'
+
+const host = `${bucket}.${server}`
+
+const generateKey = () => uuid().replace(/(\w+)-?/g, x => parseInt(x, 32).toString(36))
+
+async function uploadFile (file: Buffer, path: string) {
+  const hash = aws4.sign(
+    {
+      service: 's3',
+      region: 'fr-par',
+      host,
+      method: 'PUT',
+      path
+    },
+    {
+      accessKeyId: 'X',
+      secretAccessKey: 'X'
+    }
+  )
+
+  const result = await fetch(`https://${host}/${path}`, {
+    method: 'PUT',
+    headers: hash.headers,
+    body: file
+  })
+
+  if (!result.ok) {
+    throw new Error('Upload failed')
+  }
+
+  const url = 'https://' + host + '/' + aws4.sign(
+    {
+      service: 's3',
+      region: 'fr-par',
+      host,
+      path: path + '?X-Amz-Expires=2',
+      signQuery: true
+    },
+    {
+      accessKeyId: 'X',
+      secretAccessKey: 'X'
+    }
+  ).path
+
+  return url
 }
 
-// function toTime(time: string) {
-//   return new Date().toISOString().replace(/[:\-]|\.\d{3}/g, "");
-// }
+app.post('/upload', upload.single('file'), async (req, res) => {
+  if (!req.file) {
+    return res.status(422).end('No file specified')
+  }
 
-// function toDate(time: string) {
-//   return toTime(time).substring(0, 8);
-// }
+  if (req.file.size > 10_000_000) {
+    return res.status(422).end('Size limit (10 Mo) excedeed')
+  }
 
-const ACCESS_KEY_ID = 'XXX'
-const SECRET_ACCESS_KEY = 'XXX'
-const REGION = 'fr-par'
+  const path = generateKey() + extname(req.file.originalname)
 
-const DATE = '20200729'
-const X_AMZ_DATE = '20200729T000000Z'
-const EXPIRATION = '2020-07-30T02:00:00.000Z'
+  try {
+    const url = await uploadFile(req.file.buffer, path)
+    await uploadFile(await sharp(req.file.buffer).resize(100).toBuffer(), path.replace('.', '.preview.'))
+    res.json({
+      url
+    })
+  } catch (err) {
+    res.status(500).send(err.message)
+  }
+})
 
-const policy = {
-  expiration: EXPIRATION,
-  conditions: [
-    { bucket: 'bucktests' },
-    ['starts-with', '$key', 'bonsoir'],
-    { 'x-amz-credential': ACCESS_KEY_ID + '/' + DATE + '/' + REGION + '/s3/aws4_request' },
-    { 'x-amz-algorithm': 'AWS4-HMAC-SHA256' },
-    { 'x-amz-date': X_AMZ_DATE }
-  ]
-}
-
-const token = Buffer.from(JSON.stringify(policy, undefined, 1), 'utf-8').toString('base64')
-console.log(token)
-console.log('\n')
-const signature = hmac(hmac(hmac(hmac(hmac('AWS4' + SECRET_ACCESS_KEY, DATE), REGION), 's3'), 'aws4_request'), token, 'hex')
-
-console.log(signature)
+app.listen('4000', () => { console.log('Running...') })
