@@ -12,7 +12,7 @@
     "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
+    "@nuxtjs/pwa": "^3.3.2",
     "@vue/composition-api": "^1.0.0-beta.4",
     "graphql": "^15.3.0",
     "nuxt": "^2.13.3",
