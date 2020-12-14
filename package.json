@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "@vue/composition-api": "^1.0.0-beta.4",
+    "@vue/composition-api": "^1.0.0-beta.21",
     "graphql": "^15.3.0",
     "nuxt": "^2.13.3",
     "postcss-nested": "^4.2.3",
