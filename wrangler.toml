@@ -1,0 +1,11 @@
+name = "website"
+type = "javascript"
+workers_dev = true
+
+[site]
+bucket = ".output/public"
+entry-point = ".output"
+
+[build]
+command = ""
+upload.format = "service-worker"
