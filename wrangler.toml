@@ -1,6 +1,7 @@
 name = "website"
 type = "javascript"
-workers_dev = true
+
+route = "marrec.io/*"
 
 [site]
 bucket = ".output/public"
