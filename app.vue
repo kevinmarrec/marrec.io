@@ -3,7 +3,7 @@ const author = 'Kevin Marrec'
 const title = `${author} | Marrec.io`
 const description = `${author}, Full-stack Developer.`
 
-useMeta({
+useHead({
   title,
   meta: [
     { name: 'author', content: author },
@@ -33,9 +33,8 @@ useMeta({
 })
 
 const networkLinks = [
-  { icon: 'github', label: 'GitHub', link: 'https://github.com/kevinmarrec' },
-  { icon: 'twitter', label: 'Twitter', link: 'https://twitter.com/K_Marrec' },
-  { icon: 'linkedin', label: 'LinkedIn', link: 'https://www.linkedin.com/in/kevinmarrec' }
+  { icon: 'i-mdi-github', label: 'GitHub', link: 'https://github.com/kevinmarrec' },
+  { icon: 'i-mdi-twitter-circle', label: 'Twitter', link: 'https://twitter.com/K_Marrec' }
 ]
 </script>
 
@@ -58,7 +57,7 @@ const networkLinks = [
         target="_blank"
         class="rounded-lg bg-blue-500 hover:bg-opacity-90 px-8 py-2 mx-2"
       >
-        <SvgIcon :name="icon" />
+        <div :class="`${icon} text-white text-2xl`" />
       </a>
     </div>
   </main>

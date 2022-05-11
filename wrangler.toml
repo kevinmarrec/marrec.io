@@ -1,12 +1,13 @@
 name = "website"
-type = "javascript"
 
 route = "marrec.io/*"
 
+main = ".output/server/index.mjs"
+
+compatibility_date = "2022-05-11"
+
 [site]
 bucket = ".output/public"
-entry-point = ".output"
 
 [build]
 command = ""
-upload.format = "service-worker"
