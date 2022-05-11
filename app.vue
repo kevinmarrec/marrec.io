@@ -40,7 +40,7 @@ const networkLinks = [
 
 <template>
   <main class="container h-screen mx-auto flex flex-col justify-center items-center">
-    <img src="/img/me.jpg" alt="avatar" class="w-64 h-64 rounded-full border-4 border-blue-400">
+    <img src="/img/me.jpg" srcset="/img/me2x.jpg 2x" alt="avatar" class="w-64 h-64 rounded-full border-4 border-blue-400">
     <h1 class="text-3xl mt-5">
       <span class="text-blue-400">K</span>evin <span class="text-blue-400">M</span>arrec
     </h1>
