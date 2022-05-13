@@ -1,6 +1,6 @@
 name = "website"
 
-route = "marrec.io/*"
+route = "pwa.marrec.io/*"
 
 main = ".output/server/index.mjs"
 
