@@ -2,7 +2,8 @@ import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   buildModules: [
-    '@unocss/nuxt'
+    '@unocss/nuxt',
+    './modules/pwa'
   ],
   unocss: {
     preflight: true,
