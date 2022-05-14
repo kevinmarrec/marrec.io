@@ -1,5 +1,8 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js')
 
+self.addEventListener('install', () => self.skipWaiting())
+self.addEventListener('activate', () => self.clients.claim())
+
 const { registerRoute } = workbox.routing
 const { NetworkFirst, StaleWhileRevalidate, CacheFirst } = workbox.strategies
 const { CacheableResponsePlugin } = workbox.cacheableResponse
