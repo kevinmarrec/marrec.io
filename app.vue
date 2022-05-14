@@ -1,29 +1,5 @@
 <script setup>
-const author = 'Kevin Marrec'
-const title = `${author} | Marrec.io`
-const description = `${author}, Full-stack Developer.`
-
 useHead({
-  title,
-  meta: [
-    { name: 'author', content: author },
-    { name: 'description', content: description },
-    { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://marrec.io' },
-    { property: 'og:title', content: title },
-    { property: 'og:site_name', content: title },
-    { property: 'og:description', content: description },
-    { property: 'og:image', content: 'https://marrec.io/img/me.jpg' },
-    { property: 'og:image:type', content: 'image/jpeg' },
-    { property: 'og:image:height', content: '256' },
-    { property: 'og:image:width', content: '256' },
-    { name: 'twitter:card', content: 'summary' },
-    { name: 'twitter:site', content: '@K_Marrec' },
-    { name: 'twitter:creator', content: '@K_Marrec' }
-  ],
-  htmlAttrs: {
-    lang: 'en'
-  },
   bodyAttrs: {
     class: 'bg-cool-gray-900 text-white'
   }
