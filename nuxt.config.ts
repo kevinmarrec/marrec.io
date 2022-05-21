@@ -10,9 +10,6 @@ export default defineNuxtConfig({
     icons: true
   },
   pwa: {
-    icon: {
-      sizes: [384, 512]
-    },
     manifest: {
       name: 'Marrec.io',
       short_name: 'Marrec.io',
