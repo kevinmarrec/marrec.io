@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@iconify-json/mdi': ^1.1.19
-  '@kevinmarrec/nuxt-pwa': ^0.2.0
+  '@kevinmarrec/nuxt-pwa': ^0.2.1
   '@nuxtjs/eslint-config-typescript': ^10.0.0
   '@unocss/nuxt': ^0.37.0
   eslint: ^8.16.0
@@ -11,7 +11,7 @@ specifiers:
 
 devDependencies:
   '@iconify-json/mdi': 1.1.19
-  '@kevinmarrec/nuxt-pwa': 0.2.0
+  '@kevinmarrec/nuxt-pwa': 0.2.1
   '@nuxtjs/eslint-config-typescript': 10.0.0_xztl6dhthcahlo6akmb2bmjmle
   '@unocss/nuxt': 0.37.0
   eslint: 8.16.0
@@ -427,8 +427,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.13
     dev: true
 
-  /@kevinmarrec/nuxt-pwa/0.2.0:
-    resolution: {integrity: sha512-t8aHYE9PjdMgrkxlCoKPfk+EgiK0sYiMTRWx96A5FK+ES5LRgtge9e7jA3BRxNxvwLAkPHUr/jASTGSTruizpg==}
+  /@kevinmarrec/nuxt-pwa/0.2.1:
+    resolution: {integrity: sha512-DZSGs57WEYgO7IxI77OywoeAnN6SsV5U/KccNqnkn+y/7hcxh/fePPe6nEDXm/S/+plXu4bSe77lQGXfB28vZg==}
     dependencies:
       hasha: 5.2.2
       sharp: 0.30.6

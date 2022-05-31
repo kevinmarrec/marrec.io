@@ -10,7 +10,7 @@
 	},
 	"devDependencies": {
 		"@iconify-json/mdi": "^1.1.19",
-		"@kevinmarrec/nuxt-pwa": "^0.2.0",
+		"@kevinmarrec/nuxt-pwa": "^0.2.1",
 		"@nuxtjs/eslint-config-typescript": "^10.0.0",
 		"@unocss/nuxt": "^0.37.0",
 		"eslint": "^8.16.0",
