@@ -1,13 +1,13 @@
 <script setup>
 useHead({
   bodyAttrs: {
-    class: 'bg-cool-gray-900 text-white'
-  }
+    class: 'bg-cool-gray-900 text-white',
+  },
 })
 
 const networkLinks = [
   { icon: 'i-mdi-github', label: 'GitHub', link: 'https://github.com/kevinmarrec' },
-  { icon: 'i-mdi-twitter-circle', label: 'Twitter', link: 'https://twitter.com/K_Marrec' }
+  { icon: 'i-mdi-twitter-circle', label: 'Twitter', link: 'https://twitter.com/K_Marrec' },
 ]
 </script>
 
