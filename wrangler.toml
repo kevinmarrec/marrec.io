@@ -4,7 +4,7 @@ route = "marrec.io/*"
 
 main = ".output/server/index.mjs"
 
-compatibility_date = "2022-06-07"
+compatibility_date = "2022-10-07"
 
 [site]
 bucket = ".output/public"
