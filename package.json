@@ -12,7 +12,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
     "@iconify-json/mdi": "^1.1.33",
-    "@kevinmarrec/nuxt-pwa": "^0.7.1",
+    "@kevinmarrec/nuxt-pwa": "^0.7.2",
     "@unocss/nuxt": "^0.45.29",
     "eslint": "^8.25.0",
     "nuxt": "^3.0.0-rc.11",
