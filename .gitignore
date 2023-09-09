@@ -8,9 +8,9 @@ node_modules
 .idea
 .vscode
 
-# Nuxt build
-.nuxt*
-.output
+# SvelteKit
+.svelte-kit
+build
 
 # Environment files
 .env*

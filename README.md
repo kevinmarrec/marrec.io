@@ -1,6 +1,6 @@
 # marrec.io
 
-This project uses [Nuxt 3](https://v3.nuxtjs.org).
+This project uses [SvelteKit](https://kit.svelte.dev) powered by [Svelte](https://svelte.dev) and [Vite](https://vitejs.dev).
 
 ## Setup
 
@@ -28,4 +28,4 @@ pnpm build
 
 ## Deployment
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+Check [SvelteKit](https://kit.svelte.dev) documentation for a deployment method, like [Cloudflare Pages deployment](https://kit.svelte.dev/docs/adapter-cloudflare).
