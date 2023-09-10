@@ -5,7 +5,7 @@
   ]
 </script>
 
-<main class="h-screen flex flex-col justify-center items-center bg-cool-gray-900 text-white">
+<main class="h-full flex flex-col justify-center items-center bg-cool-gray-900 text-white">
   <img
     src="/img/me.jpg"
     srcset="/img/me2x.jpg 2x"

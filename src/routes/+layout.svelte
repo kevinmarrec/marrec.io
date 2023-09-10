@@ -18,3 +18,9 @@
 </svelte:head>
 
 <slot />
+
+<style>
+  :global(html, body, #svelte-app) {
+    height: 100%;
+  }
+</style>
