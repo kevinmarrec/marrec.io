@@ -4,12 +4,9 @@
   import '@unocss/reset/tailwind.css'
   import 'uno.css'
 
-  useRegisterSW({
-    onRegisteredSW(_, registration) {
-      registration &&
-        setInterval(() => {
-          registration.update()
-        }, 1000 * 10)
+  const { updateServiceWorker } = useRegisterSW({
+    onNeedRefresh() {
+      updateServiceWorker()
     },
   })
 </script>

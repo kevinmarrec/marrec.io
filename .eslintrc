@@ -12,6 +12,7 @@
     // ...
   ],
   "rules": {
+    "arrow-parens": ["error", "always"],
     "operator-linebreak": ["error", "after"],
     "svelte/no-at-html-tags": "off"
   }
