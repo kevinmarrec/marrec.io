@@ -1,16 +1,9 @@
-# Dependencies
+.DS_Store
 node_modules
-
-# Logs
-*.log*
-
-# IDE
-.idea
-.vscode
-
-# SvelteKit
-.svelte-kit
-build
-
-# Environment files
-.env*
+/build
+/.svelte-kit
+.env
+.env.*
+!.env.example
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
