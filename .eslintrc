@@ -1,6 +1,22 @@
 {
-  "extends": ["@antfu", "plugin:svelte/recommended"],
-  "plugins": ["prettier"],
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:svelte/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020,
+    "extraFileExtensions": [".svelte"]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "overrides": [
     {
       "files": ["*.svelte"],
@@ -9,11 +25,12 @@
         "parser": "@typescript-eslint/parser"
       }
     }
-    // ...
   ],
   "rules": {
-    "arrow-parens": ["error", "always"],
-    "operator-linebreak": ["error", "after"],
-    "svelte/no-at-html-tags": "off"
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
+    ],
+    "no-console": "error"
   }
 }
