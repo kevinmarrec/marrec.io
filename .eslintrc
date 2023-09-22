@@ -27,10 +27,10 @@
     }
   ],
   "rules": {
-    "no-console": "warn",
     "@typescript-eslint/no-unused-vars": [
       "error",
       { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }
-    ]
+    ],
+    "no-console": "error"
   }
 }
