@@ -16,6 +16,7 @@
     "@iconify-json/mdi": "^1.1.54",
     "@sveltejs/adapter-static": "^2.0.3",
     "@sveltejs/kit": "^1.25.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
     "@unocss/extractor-svelte": "^0.56.1",
