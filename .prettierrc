@@ -4,13 +4,6 @@
   "singleQuote": true,
   "printWidth": 100,
   "importOrder": ["<THIRD_PARTY_MODULES>", "^virtual:", "\\.css$", "^\\$app/", "^\\$lib/", "^\\."],
-  "importOrderSortSpecifiers": true,
-  "overrides": [
-    {
-      "files": ["*.svelte"],
-      "options": {
-        "parser": "svelte"
-      }
-    }
-  ]
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }

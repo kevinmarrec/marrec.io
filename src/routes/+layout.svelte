@@ -1,8 +1,9 @@
 <script lang="ts">
-  import '@unocss/reset/tailwind.css'
-  import 'uno.css'
   import { pwaInfo } from 'virtual:pwa-info'
   import { useRegisterSW } from 'virtual:pwa-register/svelte'
+
+  import '@unocss/reset/tailwind.css'
+  import 'uno.css'
 
   const { updateServiceWorker } = useRegisterSW({
     onNeedRefresh() {
