@@ -1,14 +1,18 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
+
   import { pwaInfo } from 'virtual:pwa-info'
   import { useRegisterSW } from 'virtual:pwa-register/svelte'
 
   import '@unocss/reset/tailwind.css'
   import 'uno.css'
 
-  const { updateServiceWorker } = useRegisterSW({
-    onNeedRefresh() {
-      updateServiceWorker()
-    },
+  onMount(() => {
+    const { updateServiceWorker } = useRegisterSW({
+      onNeedRefresh() {
+        updateServiceWorker()
+      },
+    })
   })
 </script>
 
