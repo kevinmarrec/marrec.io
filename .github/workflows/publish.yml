@@ -20,3 +20,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           projectName: marrec-io
           directory: build
+          wranglerVersion: '3'
