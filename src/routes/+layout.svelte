@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
   import { fly } from 'svelte/transition'
 
   import { pwaInfo } from 'virtual:pwa-info'
@@ -15,10 +16,12 @@
 
   export let data: LayoutData
 
-  const { updateServiceWorker } = useRegisterSW({
-    onNeedRefresh() {
-      updateServiceWorker()
-    },
+  onMount(() => {
+    const { updateServiceWorker } = useRegisterSW({
+      onNeedRefresh() {
+        updateServiceWorker()
+      },
+    })
   })
 
   let reverse = false
