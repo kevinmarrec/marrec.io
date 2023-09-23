@@ -4,7 +4,7 @@
   import { pwaInfo } from 'virtual:pwa-info'
   import { useRegisterSW } from 'virtual:pwa-register/svelte'
 
-  import '@unocss/reset/tailwind.css'
+  import '$lib/assets/reset.css'
   import 'uno.css'
 
   onMount(() => {
