@@ -1,0 +1,10 @@
+@import '@unocss/reset/tailwind.css';
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input:focus {
+  outline: none;
+}

@@ -5,9 +5,8 @@
   import { pwaInfo } from 'virtual:pwa-info'
   import { useRegisterSW } from 'virtual:pwa-register/svelte'
 
+  import '$lib/assets/reset.css'
   import '@unocss/reset/tailwind.css'
-  import '@unocss/reset/tailwind.css'
-  import 'uno.css'
   import 'uno.css'
 
   import { afterNavigate } from '$app/navigation'
